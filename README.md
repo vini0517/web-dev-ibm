@@ -1,2 +1,35 @@
-# web-dev-ibm
-My learning progress, notes, and practice files from the IBM SkillBuild Web Development course.
+# Web Development Basics – IBM SkillBuild
+
+This repository contains my notes, quiz responses, and reflections from the "Web Development Basics" course offered by IBM SkillBuild.
+
+I’m using this repo to document my learning journey and gradually build a solid foundation in full-stack web development.
+
+## 📚 Course Overview
+
+The course covers the following topics:
+
+- Computer architecture and the 4 basic functions of a computer (input, processing, output, storage)
+- Difference between hardware and software
+- Introduction to programming languages
+- Abstraction and how computers read code
+- Front-end vs back-end development
+- Difference between Internet and World Wide Web
+- Introduction to web browsers, web applications, and the cloud
+
+## 📁 Module-wise Content
+
+### 📘 Module 1: How Does a Computer Work?
+- Notes on input, processing, output, storage
+- Differences between short-term and long-term storage
+- Overview of hardware vs software
+- Web applications and browsers
+
+### 📘 Module 2: Speaking Code
+- Notes on abstraction in programming
+- Machine vs high-level programming languages
+- Compilation and interpretation process
+
+## 🛠️ Skills I'm Building
+- Web development fundamentals
+- Basic programming concepts
+- Technical documentation
