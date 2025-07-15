@@ -25,9 +25,12 @@ The course covers the following topics:
 - Web applications and browsers
 
 ### 📘 Module 2: Speaking Code
-- Notes on abstraction in programming
-- Machine vs high-level programming languages
-- Compilation and interpretation process
+- Abstraction in programming (hiding complexity)
+- Machine vs compiled vs interpreted languages
+- Compilation vs interpretation process
+- Key terms: source code, compiler, interpreter, syntax
+- Examples: C, C++, Java (compiled); Python, JavaScript (interpreted)
+
 
 ## 🛠️ Skills I'm Building
 - Web development fundamentals
