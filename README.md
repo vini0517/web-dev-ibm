@@ -31,6 +31,13 @@ The course covers the following topics:
 - Key terms: source code, compiler, interpreter, syntax
 - Examples: C, C++, Java (compiled); Python, JavaScript (interpreted)
 
+### 📘 Module 3: What is Web Development?
+- Difference between web development and web design
+- Website components: domain, browser, server
+- Steps: planning, coding, testing, maintenance
+- Client-side vs server-side processes
+- Quiz topics: UI, layout rendering, login/auth, browser roles
+
 
 ## 🛠️ Skills I'm Building
 - Web development fundamentals
