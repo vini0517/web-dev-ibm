@@ -4,42 +4,47 @@ This repository contains my notes, quiz responses, and reflections from the "Web
 
 I’m using this repo to document my learning journey and gradually build a solid foundation in full-stack web development.
 
+---
+
 ## 📚 Course Overview
 
-The course covers the following topics:
+The course introduces the foundational concepts of computer science and web development. Topics range from understanding computer architecture and programming languages to front-end development, artificial intelligence, and the eras of computing.
 
-- Computer architecture and the 4 basic functions of a computer (input, processing, output, storage)
-- Difference between hardware and software
-- Introduction to programming languages
-- Abstraction and how computers read code
-- Front-end vs back-end development
-- Difference between Internet and World Wide Web
-- Introduction to web browsers, web applications, and the cloud
+---
 
 ## 📁 Module-wise Content
 
 ### 📘 Module 1: How Does a Computer Work?
-- Notes on input, processing, output, storage
-- Differences between short-term and long-term storage
-- Overview of hardware vs software
-- Web applications and browsers
+Covers the four basic functions of a computer and the distinction between hardware and software.
 
 ### 📘 Module 2: Speaking Code
-- Abstraction in programming (hiding complexity)
-- Machine vs compiled vs interpreted languages
-- Compilation vs interpretation process
-- Key terms: source code, compiler, interpreter, syntax
-- Examples: C, C++, Java (compiled); Python, JavaScript (interpreted)
+Explores abstraction, programming languages, and the difference between compilation and interpretation.
 
 ### 📘 Module 3: What is Web Development?
-- Difference between web development and web design
-- Website components: domain, browser, server
-- Steps: planning, coding, testing, maintenance
-- Client-side vs server-side processes
-- Quiz topics: UI, layout rendering, login/auth, browser roles
+Introduces website structure, development phases, and key differences between web design and development.
 
+### 📘 Module 4: Front-End Development
+Focuses on client-side development, HTML/CSS basics, and browser rendering.
+
+### 📘 Module 5: AI Concepts
+Explains what artificial intelligence is, how it works, and its real-world applications.
+
+### 📘 Module 6: Eras of Computing
+Describes the evolution of computing from tabulation to programming to AI-driven processes.
+
+---
 
 ## 🛠️ Skills I'm Building
-- Web development fundamentals
-- Basic programming concepts
-- Technical documentation
+
+- Web development fundamentals  
+- Basic programming concepts  
+- Technical documentation  
+- AI awareness in computing
+
+---
+
+## About
+
+This repo is a reflection of my learning progress in the IBM SkillBuild Web Development course. It includes personal notes, quiz answers, and summaries to reinforce understanding of each topic.
+
+---
