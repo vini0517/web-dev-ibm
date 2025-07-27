@@ -1,133 +1,138 @@
-##Module 4: Interacting with Data
+# ✅ Module 4: Interacting with Data
 
 ---
 
-## ✅ **What’s Working Well**
+## 🧠 Course Introduction
 
-| Area                      | Highlights                                                                                                      |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Real-world examples**   | Candle shopping and café database analogies are relatable and effectively contextualize concepts.               |
-| **Progressive structure** | Builds from defining data to SQL CRUD operations to practical application.                                      |
-| **Clear walkthrough**     | MySQL commands and examples (e.g., `SELECT`, `INSERT`, `UPDATE`) are logically sequenced and beginner-friendly. |
-| **Terminology**           | Key terms like **primitive data types**, **CRUD**, **DDL/DML/DQL**, and **camelCase** are well explained.       |
+This module focuses on how web developers interact with data—both user‑generated and database‑stored—and how they leverage JavaScript and SQL to manage that data effectively.
 
 ---
 
-## ❌ **Issues & Suggestions for Improvement**
+## 🎯 Learning Objectives
 
-### 📌 1. **Module Title Missing Format**
+After completing Module 4, you should be able to:
 
-* **Issue:** Like in Module 2, the heading "Module 4: Interacting with data" isn’t properly isolated/structured.
-* **Fix:** Use a consistent heading style:
-
-  ```
-  # Module 4: Interacting with Data
-  ```
+* Define data and common data types (especially in JavaScript)
+* Explain CRUD: Create, Read, Update, Delete
+* Describe MySQL and basic SQL syntax
+* Demonstrate how to create, populate, query, and update a MySQL database
 
 ---
 
-### 📌 2. **Missing or Broken Syntax and Formatting**
+## 1. Understanding Data
 
-* **Issue:** SQL syntax blocks are not consistently formatted. Line breaks and quote styles are sometimes missing or inconsistent.
-* **Examples:**
+* **Data**: Pieces of information a computer can store and process (e.g., form inputs, search queries)
+* Examples:
 
-  * `WHERE movieTitle='In the Mood for Love` ← Missing closing `'`.
-  * SQL commands should ideally be in code blocks (with `sql` syntax highlighting if possible).
-* **Fix:**
-
-  ```sql
-  UPDATE movie_info
-  SET releaseYear = '2000'
-  WHERE movieTitle = 'In the Mood for Love';
-  ```
+  * Searching for "candle" (user input)
+  * Review suggestions (derived from historical data)
+  * Login/authentication (user credentials vs stored data)
+  * Geolocation and pre‑filled address fields
+  * Total cost calculation (price + tax + shipping)
 
 ---
 
-### 📌 3. **List Bullets Are Inconsistent**
+## 2. Common Data Types (JavaScript Primitives)
 
-* Mixed use of `•`, hyphens, and even spaces without bullets.
-* Some sections use “Select each tab…” or “Expand each section…” which suggests interactive content that isn’t actually interactive in text format.
+| Data Type   | Example                    | Description                  |
+| ----------- | -------------------------- | ---------------------------- |
+| `string`    | `"hello"`                  | Textual data                 |
+| `number`    | `42`, `3.14`               | Integers and decimals        |
+| `boolean`   | `true`, `false`            | Logical values               |
+| `undefined` | a variable not yet defined | Not assigned a value         |
+| `null`      | `null`                     | Intentional absence of value |
 
-**Fix:** Use consistent bullet formatting like:
+---
 
-```markdown
-- Search
-- Suggestions
-- Authentication
+## 3. CRUD Operations & SQL
+
+Web developers typically work with four operations through SQL:
+
+* **Create** – add new records
+* **Read** – retrieve data from database
+* **Update** – modify existing records
+* **Delete** – remove records from tables
+
+SQL is the structured query language used widely (especially in MySQL) to implement these operations.
+
+---
+
+## 4. SQL Essentials & MySQL Commands
+
+### a) Create a Database
+
+```sql
+CREATE DATABASE movies;
 ```
 
-Or numbered steps where appropriate.
+### b) Create a Table
+
+```sql
+CREATE TABLE movie_info (
+  movieNum INT,
+  movieTitle VARCHAR(100),
+  releaseYear YEAR,
+  directorLastName VARCHAR(50),
+  country VARCHAR(50),
+  durationMin INT
+);
+```
+
+### c) Insert Data
+
+```sql
+INSERT INTO movie_info (movieNum, movieTitle, releaseYear, directorLastName, country, durationMin)
+VALUES
+  (1, "Les Parapluies de Cherbourg", 1964, "Demy", "France", 91),
+  (2, "In the Mood for Love", 2000, "Kar-wai", "Hong Kong", 98),
+  (3, "Roma", 2018, "Cuarón", "Mexico", 135);
+```
+
+### d) Read Data
+
+```sql
+SELECT * FROM movie_info;
+
+SELECT movieTitle, durationMin
+FROM movie_info
+WHERE country = 'Mexico';
+```
+
+### e) Update Data
+
+```sql
+UPDATE movie_info
+SET releaseYear = 2000
+WHERE movieTitle = 'In the Mood for Love';
+```
+
+*(Always include a WHERE clause to avoid unintended changes to all rows.)*
 
 ---
 
-### 📌 4. **Data Table Example is Referenced But Missing**
+## 5. SQL Command Types
 
-* **Issue:** The line says: “Review the following table showing the food menu items in the café.” But the table isn’t shown.
-* **Fix:** Insert a small table like:
-
-| ItemName   | ItemType     | Price | Season |
-| ---------- | ------------ | ----- | ------ |
-| Ham Panini | Sandwich     | 5.50  | None   |
-| Latte      | Hot Beverage | 3.99  | Winter |
+| Category                             | Commands                     | Purpose                             |
+| ------------------------------------ | ---------------------------- | ----------------------------------- |
+| **Data Definition Language (DDL)**   | `CREATE`, `ALTER`, `DROP`    | Define or modify database structure |
+| **Data Manipulation Language (DML)** | `INSERT`, `UPDATE`, `DELETE` | Add, modify, or remove data         |
+| **Data Query Language (DQL)**        | `SELECT`                     | Retrieve data                       |
 
 ---
 
-### 📌 5. **Data Types Could Use a Visual Table**
+## 6. Additional Notes
 
-* The explanation of JavaScript data types would benefit from a chart like:
-
-| Data Type   | Example         | Description                        |
-| ----------- | --------------- | ---------------------------------- |
-| `string`    | `"hello"`       | Text                               |
-| `number`    | `42`, `3.14`    | Integers and floats                |
-| `boolean`   | `true`, `false` | Logical true/false                 |
-| `undefined` | `undefined`     | Variable declared but not assigned |
-| `null`      | `null`          | Intentionally empty                |
+* SQL keywords aren't case-sensitive but best practice is to use **UPPERCASE** for keywords.
+* Use **underscores** in table names and **camelCase** in column names (e.g. `durationMin`, `movieTitle`).
+* End each SQL statement with a **semicolon (`;`)**.
 
 ---
 
-### 📌 6. **MySQL Table Create Statement is Missing Commas**
+## ✅ Summary
 
-* **Issue:** The SQL for `CREATE TABLE movie_info` omits commas between column definitions.
-* **Fix:**
-
-  ```sql
-  CREATE TABLE movie_info (
-    movieNum INT,
-    movieTitle VARCHAR(100),
-    releaseYear YEAR,
-    directorLastName VARCHAR(50),
-    country VARCHAR(50),
-    durationMin INT
-  );
-  ```
-
----
-
-### 📌 7. **No Summary or Key Takeaways**
-
-* **Issue:** The module ends abruptly after the last SQL command.
-* **Fix:** Add a **"Summary"** section like:
-
----
-
-### 🧾 **Summary**
-
-By the end of this module, you should now understand:
-
-* What data is and where it comes from on websites.
-* Different types of data and their significance (e.g., `string`, `boolean`, `undefined`).
-* How web apps use CRUD operations to manage data in databases.
-* Basic SQL syntax using MySQL to create, read, update, and delete records.
-
----
-
-## 🛠️ Optional Enhancements
-
-| Idea                         | Benefit                                                                |
-| ---------------------------- | ---------------------------------------------------------------------- |
-| **Practice Exercises**       | e.g., “Write a SQL query to list all movies released before 2010.”     |
-| **Mini Challenge**           | Create a mini project: e.g., “Design a simple database for a library.” |
-| **Code Sandbox/GitHub Link** | Optional link to try SQL online or view in real-time.                  |
+* JavaScript handles data types like strings, booleans, numbers, etc.
+* CRUD operations—Create, Read, Update, Delete—are essential for database manipulation.
+* MySQL syntax requires structured SQL commands to manage a database effectively.
+* Practical use includes creating a table, inserting data, running SELECT queries, and updating records.
 
 ---
